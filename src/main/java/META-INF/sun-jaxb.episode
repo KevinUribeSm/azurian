@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+      
+    <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2022.06.16 a las 10:00:43 AM CLT 
+
+  -->
+      
+    <bindings xmlns:tns="http://controller.ws.dte.azurian.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.example.consumingwebservice.wsdl"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="tns:transferenciaDocumentos">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.TransferenciaDocumentos"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:transferenciaDocumentosResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.TransferenciaDocumentosResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:marcaTransferencia">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.MarcaTransferencia"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:marcaTransferenciaResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.MarcaTransferenciaResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:consultaDocumento">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ConsultaDocumento"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:consultaDocumentoResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ConsultaDocumentoResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:aceptacionRechazo">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.AceptacionRechazo"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:aceptacionRechazoResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.AceptacionRechazoResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:consultaMasivo">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ConsultaMasivo"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:consultaMasivoResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ConsultaMasivoResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:descargarArchivo">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.DescargarArchivo"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="tns:descargarArchivoResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.DescargarArchivoResponse"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ArrayOf_tns3_TransferenciaDocumentosDoc">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ArrayOfTns3TransferenciaDocumentosDoc"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ArrayOf_tns3_MarcaTransferenciaDoc">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ArrayOfTns3MarcaTransferenciaDoc"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ArrayOf_tns3_AceptacionRechazoDoc">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ArrayOfTns3AceptacionRechazoDoc"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ArrayOf_tns3_ConsultaMasivoDoc">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ArrayOfTns3ConsultaMasivoDoc"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="http://request.ws.dte.azurian.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.example.consumingwebservice.wsdl"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:TransferenciaDocumentosRequest">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.TransferenciaDocumentosRequest"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:MarcaTransferenciaDocRequest">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.MarcaTransferenciaDocRequest"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ConsultaDocumentoRequest">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ConsultaDocumentoRequest"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AceptacionRechazoRequest">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.AceptacionRechazoRequest"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ConsultaMasivoRequest">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ConsultaMasivoRequest"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:DescargarArchivoRequest">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.DescargarArchivoRequest"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="http://response.ws.dte.azurian.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.example.consumingwebservice.wsdl"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:TransferenciaDocumentosResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.TransferenciaDocumentosResponse2"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:MarcaTransferenciaResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.MarcaTransferenciaResponse2"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ConsultaDocumentoResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ConsultaDocumentoResponse2"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AceptacionRechazoResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.AceptacionRechazoResponse2"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ConsultaMasivoResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ConsultaMasivoResponse2"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:DescargarArchivoResponse">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.DescargarArchivoResponse2"/>
+                
+        </bindings>
+          
+    </bindings>
+      
+    <bindings xmlns:tns="http://docs.ws.dte.azurian.com" if-exists="true" scd="x-schema::tns">
+            
+        <schemaBindings map="false">
+                  
+            <package name="com.example.consumingwebservice.wsdl"/>
+                
+        </schemaBindings>
+            
+        <bindings if-exists="true" scd="~tns:TransferenciaDocumentosDoc">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.TransferenciaDocumentosDoc"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:MarcaTransferenciaDoc">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.MarcaTransferenciaDoc"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:AceptacionRechazoDoc">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.AceptacionRechazoDoc"/>
+                
+        </bindings>
+            
+        <bindings if-exists="true" scd="~tns:ConsultaMasivoDoc">
+                  
+            <class ref="com.example.consumingwebservice.wsdl.ConsultaMasivoDoc"/>
+                
+        </bindings>
+          
+    </bindings>
+    
+</bindings>

@@ -1,0 +1,396 @@
+<WL5G3N0:definitions xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://controller.ws.dte.azurian.com" xmlns:WL5G3N2="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://controller.ws.dte.azurian.com">
+<WL5G3N0:types>
+<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://controller.ws.dte.azurian.com" xmlns:intf="http://controller.ws.dte.azurian.com" xmlns:tns1="http://request.ws.dte.azurian.com" xmlns:tns2="http://response.ws.dte.azurian.com" xmlns:tns3="http://docs.ws.dte.azurian.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://controller.ws.dte.azurian.com">
+<xsd:import namespace="http://docs.ws.dte.azurian.com"/>
+<xsd:import namespace="http://response.ws.dte.azurian.com"/>
+<xsd:import namespace="http://request.ws.dte.azurian.com"/>
+<xsd:element name="transferenciaDocumentos">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="request" type="tns1:TransferenciaDocumentosRequest"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="transferenciaDocumentosResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="transferenciaDocumentosReturn" type="tns2:TransferenciaDocumentosResponse"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="ArrayOf_tns3_TransferenciaDocumentosDoc">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="tns3:TransferenciaDocumentosDoc"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="marcaTransferencia">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="request" type="tns1:MarcaTransferenciaDocRequest"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="ArrayOf_tns3_MarcaTransferenciaDoc">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="tns3:MarcaTransferenciaDoc"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="marcaTransferenciaResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" name="marcaTransferenciaReturn" type="tns2:MarcaTransferenciaResponse"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="consultaDocumento">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="request" type="tns1:ConsultaDocumentoRequest"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="consultaDocumentoResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="consultaDocumentoReturn" type="tns2:ConsultaDocumentoResponse"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="aceptacionRechazo">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="request" type="tns1:AceptacionRechazoRequest"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="ArrayOf_tns3_AceptacionRechazoDoc">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="tns3:AceptacionRechazoDoc"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="aceptacionRechazoResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="aceptacionRechazoReturn" type="tns2:AceptacionRechazoResponse"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="consultaMasivo">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="request" type="tns1:ConsultaMasivoRequest"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="consultaMasivoResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="consultaMasivoReturn" type="tns2:ConsultaMasivoResponse"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:complexType name="ArrayOf_tns3_ConsultaMasivoDoc">
+<xsd:sequence>
+<xsd:element maxOccurs="unbounded" minOccurs="0" name="item" type="tns3:ConsultaMasivoDoc"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:element name="descargarArchivo">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="request" type="tns1:DescargarArchivoRequest"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+<xsd:element name="descargarArchivoResponse">
+<xsd:complexType>
+<xsd:sequence>
+<xsd:element name="descargarArchivoReturn" type="tns2:DescargarArchivoResponse"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+</xsd:schema>
+<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://controller.ws.dte.azurian.com" xmlns:intf="http://controller.ws.dte.azurian.com" xmlns:tns1="http://request.ws.dte.azurian.com" xmlns:tns2="http://response.ws.dte.azurian.com" xmlns:tns3="http://docs.ws.dte.azurian.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://request.ws.dte.azurian.com">
+<xsd:import namespace="http://controller.ws.dte.azurian.com"/>
+<xsd:import namespace="http://docs.ws.dte.azurian.com"/>
+<xsd:import namespace="http://response.ws.dte.azurian.com"/>
+<xsd:complexType name="TransferenciaDocumentosRequest">
+<xsd:sequence>
+<xsd:element name="estadoDte" nillable="true" type="xsd:int"/>
+<xsd:element name="fechaDesde" nillable="true" type="xsd:date"/>
+<xsd:element name="fechaHasta" nillable="true" type="xsd:date"/>
+<xsd:element name="folio" nillable="true" type="xsd:long"/>
+<xsd:element name="idTipoDocumento" nillable="true" type="xsd:int"/>
+<xsd:element name="nroResolucion" nillable="true" type="xsd:int"/>
+<xsd:element name="rutEmisor" nillable="true" type="xsd:int"/>
+<xsd:element name="rutEmpresa" nillable="true" type="xsd:int"/>
+<xsd:element name="wsApiKey" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="MarcaTransferenciaDocRequest">
+<xsd:sequence>
+<xsd:element name="documentos" nillable="true" type="impl:ArrayOf_tns3_MarcaTransferenciaDoc"/>
+<xsd:element name="resolucionSii" nillable="true" type="xsd:int"/>
+<xsd:element name="rutEmpresa" nillable="true" type="xsd:int"/>
+<xsd:element name="wsApiKey" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConsultaDocumentoRequest">
+<xsd:sequence>
+<xsd:element name="idTipoDocumento" nillable="true" type="xsd:int"/>
+<xsd:element name="nroResolucion" nillable="true" type="xsd:int"/>
+<xsd:element name="numeroFolio" nillable="true" type="xsd:long"/>
+<xsd:element name="rutEmisor" nillable="true" type="xsd:int"/>
+<xsd:element name="rutEmpresa" nillable="true" type="xsd:int"/>
+<xsd:element name="trackId" nillable="true" type="xsd:long"/>
+<xsd:element name="wsApiKey" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="AceptacionRechazoRequest">
+<xsd:sequence>
+<xsd:element name="documentos" nillable="true" type="impl:ArrayOf_tns3_AceptacionRechazoDoc"/>
+<xsd:element name="nroResolucion" nillable="true" type="xsd:int"/>
+<xsd:element name="rutEmpresa" nillable="true" type="xsd:int"/>
+<xsd:element name="wsApiKey" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConsultaMasivoRequest">
+<xsd:sequence>
+<xsd:element name="nroResolucion" nillable="true" type="xsd:int"/>
+<xsd:element name="rutEmpresa" nillable="true" type="xsd:int"/>
+<xsd:element name="trackId" nillable="true" type="xsd:long"/>
+<xsd:element name="wsApiKey" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="DescargarArchivoRequest">
+<xsd:sequence>
+<xsd:element name="folio" nillable="true" type="xsd:long"/>
+<xsd:element name="idTipoDocumento" nillable="true" type="xsd:int"/>
+<xsd:element name="nroResolucion" nillable="true" type="xsd:int"/>
+<xsd:element name="rutEmisor" nillable="true" type="xsd:int"/>
+<xsd:element name="rutEmpresa" nillable="true" type="xsd:int"/>
+<xsd:element name="tipoArchivo" nillable="true" type="xsd:int"/>
+<xsd:element name="tipoEntrega" nillable="true" type="xsd:int"/>
+<xsd:element name="wsApiKey" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://controller.ws.dte.azurian.com" xmlns:intf="http://controller.ws.dte.azurian.com" xmlns:tns1="http://request.ws.dte.azurian.com" xmlns:tns2="http://response.ws.dte.azurian.com" xmlns:tns3="http://docs.ws.dte.azurian.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://docs.ws.dte.azurian.com">
+<xsd:import namespace="http://controller.ws.dte.azurian.com"/>
+<xsd:import namespace="http://response.ws.dte.azurian.com"/>
+<xsd:import namespace="http://request.ws.dte.azurian.com"/>
+<xsd:complexType name="TransferenciaDocumentosDoc">
+<xsd:sequence>
+<xsd:element name="fechaEmision" nillable="true" type="xsd:date"/>
+<xsd:element name="fechaRecepcion" nillable="true" type="xsd:date"/>
+<xsd:element name="folio" nillable="true" type="xsd:long"/>
+<xsd:element name="idTipoDocuemnto" nillable="true" type="xsd:int"/>
+<xsd:element name="montoTotal" nillable="true" type="xsd:int"/>
+<xsd:element name="razonSocial" nillable="true" type="xsd:string"/>
+<xsd:element name="rutEmisor" nillable="true" type="xsd:int"/>
+<xsd:element name="trackId" nillable="true" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="MarcaTransferenciaDoc">
+<xsd:sequence>
+<xsd:element name="idTipoDocumento" nillable="true" type="xsd:int"/>
+<xsd:element name="numeroFolio" nillable="true" type="xsd:long"/>
+<xsd:element name="rutEmisor" nillable="true" type="xsd:int"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="AceptacionRechazoDoc">
+<xsd:sequence>
+<xsd:element name="accion" nillable="true" type="xsd:int"/>
+<xsd:element name="idTipoDocumento" nillable="true" type="xsd:int"/>
+<xsd:element name="motivoRechazo" nillable="true" type="xsd:string"/>
+<xsd:element name="numeroFolio" nillable="true" type="xsd:int"/>
+<xsd:element name="rutEmisor" nillable="true" type="xsd:int"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConsultaMasivoDoc">
+<xsd:sequence>
+<xsd:element name="codigoRespuesta" nillable="true" type="xsd:int"/>
+<xsd:element name="descripcion" nillable="true" type="xsd:string"/>
+<xsd:element name="idTipoDocumento" nillable="true" type="xsd:int"/>
+<xsd:element name="numeroFolio" nillable="true" type="xsd:long"/>
+<xsd:element name="rutEmisor" nillable="true" type="xsd:int"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
+<xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://controller.ws.dte.azurian.com" xmlns:intf="http://controller.ws.dte.azurian.com" xmlns:tns1="http://request.ws.dte.azurian.com" xmlns:tns2="http://response.ws.dte.azurian.com" xmlns:tns3="http://docs.ws.dte.azurian.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://response.ws.dte.azurian.com">
+<xsd:import namespace="http://controller.ws.dte.azurian.com"/>
+<xsd:import namespace="http://docs.ws.dte.azurian.com"/>
+<xsd:import namespace="http://request.ws.dte.azurian.com"/>
+<xsd:complexType name="TransferenciaDocumentosResponse">
+<xsd:sequence>
+<xsd:element name="codigoRespuesta" nillable="true" type="xsd:int"/>
+<xsd:element name="descripcion" nillable="true" type="xsd:string"/>
+<xsd:element name="documentos" nillable="true" type="impl:ArrayOf_tns3_TransferenciaDocumentosDoc"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="MarcaTransferenciaResponse">
+<xsd:sequence>
+<xsd:element name="codigoRespuesta" nillable="true" type="xsd:int"/>
+<xsd:element name="descripcion" nillable="true" type="xsd:string"/>
+<xsd:element name="idTipoDocumento" nillable="true" type="xsd:int"/>
+<xsd:element name="nroAmbiente" nillable="true" type="xsd:int"/>
+<xsd:element name="numeroFolio" nillable="true" type="xsd:long"/>
+<xsd:element name="rutEmisor" nillable="true" type="xsd:int"/>
+<xsd:element name="rutEmpresa" nillable="true" type="xsd:int"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConsultaDocumentoResponse">
+<xsd:sequence>
+<xsd:element name="codigoRespuesta" nillable="true" type="xsd:int"/>
+<xsd:element name="descripcion" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="AceptacionRechazoResponse">
+<xsd:sequence>
+<xsd:element name="codigoRespuesta" nillable="true" type="xsd:int"/>
+<xsd:element name="descripcion" nillable="true" type="xsd:string"/>
+<xsd:element name="trackId" nillable="true" type="xsd:long"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="ConsultaMasivoResponse">
+<xsd:sequence>
+<xsd:element name="codigoRespuesta" nillable="true" type="xsd:int"/>
+<xsd:element name="descripcion" nillable="true" type="xsd:string"/>
+<xsd:element name="documentos" nillable="true" type="impl:ArrayOf_tns3_ConsultaMasivoDoc"/>
+</xsd:sequence>
+</xsd:complexType>
+<xsd:complexType name="DescargarArchivoResponse">
+<xsd:sequence>
+<xsd:element name="codigoRespuesta" nillable="true" type="xsd:int"/>
+<xsd:element name="contenido" nillable="true" type="xsd:string"/>
+<xsd:element name="descripcion" nillable="true" type="xsd:string"/>
+<xsd:element name="url" nillable="true" type="xsd:string"/>
+</xsd:sequence>
+</xsd:complexType>
+</xsd:schema>
+</WL5G3N0:types>
+<WL5G3N0:message name="transferenciaDocumentosResponse">
+<WL5G3N0:part element="WL5G3N1:transferenciaDocumentosResponse" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="transferenciaDocumentosRequest">
+<WL5G3N0:part element="WL5G3N1:transferenciaDocumentos" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="aceptacionRechazoResponse">
+<WL5G3N0:part element="WL5G3N1:aceptacionRechazoResponse" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="consultaDocumentoRequest">
+<WL5G3N0:part element="WL5G3N1:consultaDocumento" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="descargarArchivoRequest">
+<WL5G3N0:part element="WL5G3N1:descargarArchivo" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="consultaMasivoRequest">
+<WL5G3N0:part element="WL5G3N1:consultaMasivo" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="marcaTransferenciaRequest">
+<WL5G3N0:part element="WL5G3N1:marcaTransferencia" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="marcaTransferenciaResponse">
+<WL5G3N0:part element="WL5G3N1:marcaTransferenciaResponse" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="consultaMasivoResponse">
+<WL5G3N0:part element="WL5G3N1:consultaMasivoResponse" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="descargarArchivoResponse">
+<WL5G3N0:part element="WL5G3N1:descargarArchivoResponse" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="consultaDocumentoResponse">
+<WL5G3N0:part element="WL5G3N1:consultaDocumentoResponse" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:message name="aceptacionRechazoRequest">
+<WL5G3N0:part element="WL5G3N1:aceptacionRechazo" name="parameters"/>
+</WL5G3N0:message>
+<WL5G3N0:portType name="ServicioRecepcion">
+<WL5G3N0:operation name="transferenciaDocumentos">
+<WL5G3N0:input message="WL5G3N1:transferenciaDocumentosRequest" name="transferenciaDocumentosRequest"/>
+<WL5G3N0:output message="WL5G3N1:transferenciaDocumentosResponse" name="transferenciaDocumentosResponse"/>
+</WL5G3N0:operation>
+<WL5G3N0:operation name="marcaTransferencia">
+<WL5G3N0:input message="WL5G3N1:marcaTransferenciaRequest" name="marcaTransferenciaRequest"/>
+<WL5G3N0:output message="WL5G3N1:marcaTransferenciaResponse" name="marcaTransferenciaResponse"/>
+</WL5G3N0:operation>
+<WL5G3N0:operation name="consultaDocumento">
+<WL5G3N0:input message="WL5G3N1:consultaDocumentoRequest" name="consultaDocumentoRequest"/>
+<WL5G3N0:output message="WL5G3N1:consultaDocumentoResponse" name="consultaDocumentoResponse"/>
+</WL5G3N0:operation>
+<WL5G3N0:operation name="aceptacionRechazo">
+<WL5G3N0:input message="WL5G3N1:aceptacionRechazoRequest" name="aceptacionRechazoRequest"/>
+<WL5G3N0:output message="WL5G3N1:aceptacionRechazoResponse" name="aceptacionRechazoResponse"/>
+</WL5G3N0:operation>
+<WL5G3N0:operation name="consultaMasivo">
+<WL5G3N0:input message="WL5G3N1:consultaMasivoRequest" name="consultaMasivoRequest"/>
+<WL5G3N0:output message="WL5G3N1:consultaMasivoResponse" name="consultaMasivoResponse"/>
+</WL5G3N0:operation>
+<WL5G3N0:operation name="descargarArchivo">
+<WL5G3N0:input message="WL5G3N1:descargarArchivoRequest" name="descargarArchivoRequest"/>
+<WL5G3N0:output message="WL5G3N1:descargarArchivoResponse" name="descargarArchivoResponse"/>
+</WL5G3N0:operation>
+</WL5G3N0:portType>
+<WL5G3N0:binding name="ServicioRecepcionSoapBinding" type="WL5G3N1:ServicioRecepcion">
+<WL5G3N2:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+<WL5G3N0:operation name="transferenciaDocumentos">
+<WL5G3N2:operation/>
+<WL5G3N0:input name="transferenciaDocumentosRequest">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:input>
+<WL5G3N0:output name="transferenciaDocumentosResponse">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:output>
+</WL5G3N0:operation>
+<WL5G3N0:operation name="marcaTransferencia">
+<WL5G3N2:operation/>
+<WL5G3N0:input name="marcaTransferenciaRequest">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:input>
+<WL5G3N0:output name="marcaTransferenciaResponse">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:output>
+</WL5G3N0:operation>
+<WL5G3N0:operation name="consultaDocumento">
+<WL5G3N2:operation/>
+<WL5G3N0:input name="consultaDocumentoRequest">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:input>
+<WL5G3N0:output name="consultaDocumentoResponse">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:output>
+</WL5G3N0:operation>
+<WL5G3N0:operation name="aceptacionRechazo">
+<WL5G3N2:operation/>
+<WL5G3N0:input name="aceptacionRechazoRequest">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:input>
+<WL5G3N0:output name="aceptacionRechazoResponse">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:output>
+</WL5G3N0:operation>
+<WL5G3N0:operation name="consultaMasivo">
+<WL5G3N2:operation/>
+<WL5G3N0:input name="consultaMasivoRequest">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:input>
+<WL5G3N0:output name="consultaMasivoResponse">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:output>
+</WL5G3N0:operation>
+<WL5G3N0:operation name="descargarArchivo">
+<WL5G3N2:operation/>
+<WL5G3N0:input name="descargarArchivoRequest">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:input>
+<WL5G3N0:output name="descargarArchivoResponse">
+<WL5G3N2:body use="literal"/>
+</WL5G3N0:output>
+</WL5G3N0:operation>
+</WL5G3N0:binding>
+<WL5G3N0:service name="ServicioRecepcionService">
+<WL5G3N0:documentation>OSB Service</WL5G3N0:documentation>
+<WL5G3N0:port binding="WL5G3N1:ServicioRecepcionSoapBinding" name="ServicioRecepcion">
+<WL5G3N2:address location="http://soa.grupogtd.com:7503/services/grupogtd/azurian/serviciorecepcion"/>
+</WL5G3N0:port>
+</WL5G3N0:service>
+</WL5G3N0:definitions>
